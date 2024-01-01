@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 1em;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    width: 300px;
+    padding: 16px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.card > img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.overlay{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 270px;
+    height: 267px;
+    border-radius: 8px;
+    background-color: rgb(0, 255, 238, 0);
+    transition: background-color 300ms;
+    cursor: url(/images/icon-view.svg), auto;
+}
+
+.overlay:hover{
+    background-color: rgb(0, 255, 238, 0.5);
+    cursor: ;
+}
+
+h3{
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: color 300ms;
+}
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.price{
+    display: inline-flex;
+    gap: 8px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.price img{
+    width: 10px;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    display: inline-flex;
+    gap: 8px;
+}
+
+.time img{
+    width: 18px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.author img{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: auto 0;
+}
+
+.author-name{
+    color: white;
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+.author-name:hover{
+    color: hsl(178, 100%, 50%);
+}
